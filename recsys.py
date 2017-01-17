@@ -70,7 +70,7 @@ def main():
     sc = SparkContext("local[*]", "RecSys")
 
     # Load and parse the data
-    #data = sc.textFile("./data/ratings.dat") 
+    #  here change the path to where you have stored for ml-10M100k, which downloaded from movielens website
     ratingsRDD = sc.textFile("file:///Users/xicheng/Dropbox/Crackcode/BitTiger/0603movie/ml-10M100K/ratings.dat")
     
     moviesRDD = sc.textFile("file:///Users/xicheng/Dropbox/Crackcode/BitTiger/0603movie/ml-10M100K/movies.dat")\
